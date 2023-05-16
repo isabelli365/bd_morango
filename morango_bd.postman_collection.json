@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "2ac67386-6ebb-419c-87cc-ff746a8dc0b5",
+		"name": "morango_bd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26336157"
+	},
+	"item": [
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "selecionar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/usuario/selecionar",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"usuario",
+								"selecionar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_usuario\":\"PAOLA CRISTINA MENDEZ\",\r\n    \"username_usuario\": \"BATATI QUANDO NASCE\",\r\n    \"email_usuario\": \"paola1324@gmail.com\",\r\n    \"senha_usuario\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_base}}/usuario/inserir",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"usuario",
+								"inserir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/usuario/alterar",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"usuario",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/usuario/deletar/:2",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"usuario",
+								"deletar",
+								":2"
+							],
+							"variable": [
+								{
+									"key": "2",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

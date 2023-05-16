@@ -1,0 +1,31 @@
+{
+  "name": "bd_morango",
+  "version": "1.0.0",
+  "description": "Cadastro de usuários para uma loja que vende morangos",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabelli365/bd_morango.git"
+  },
+  "keywords": [
+    "morango",
+    "loja",
+    "cadastro",
+    "usuario"
+  ],
+  "author": "ISABELLI DE OLIVEIRA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabelli365/bd_morango/issues"
+  },
+  "homepage": "https://github.com/isabelli365/bd_morango#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.3.1",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.31.1"
+  }
+}
